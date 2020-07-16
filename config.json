@@ -1,0 +1,22 @@
+"nodemonConfig": {
+    "verbose": true,
+    "watch": [
+      "./"
+    ],
+    "ext": "ts",
+    "ignore": [
+      "*.test.ts"
+    ],
+    "delay": "3",
+    "execMap": {
+      "ts": "ts-node"
+    }
+  }
+
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server/server.ts",
+    "startnodemon": "nodemon --watch ./ --ext ts,js --exec ts-node --ignore '*.test.ts' --delay 3  ./server/mserver.ts"
+  }
+
+  
